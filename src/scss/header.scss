@@ -1,0 +1,22 @@
+@import "partials/params";
+
+.header{
+  text-align: center;
+
+  &__title{
+    font-size: 35px;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:300;
+  }
+
+  &__subtitle{
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+
+  }
+}
