@@ -1,0 +1,31 @@
+@import "partials/params";
+.Bouncy{
+	margin-top: 100px;
+}
+.head{
+	  font-family: 'Source Sans Pro', sans-serif;
+	  font-weight: 200;
+	  font-size: 25px;
+	  color: $head-color;
+	  margin-bottom: 30px;
+	  text-transform: uppercase;
+}
+.text{
+	color: $text;
+	font-size: 16px;
+	line-height: 27px;
+	margin-bottom: 35px;
+}
+.button{
+	color: $head-color;
+	font-size: 16px;
+	border: 1px solid $head-color;
+	padding: 6px 28px;
+	border-radius: 20px;
+
+	&:hover{
+		color: white;
+		text-decoration:none;
+		background: $head-color;
+	}
+}
