@@ -24,6 +24,7 @@
 .About{
   margin-top: 40px;
   text-align: center;
+  background: #f3f3f3;
 }
 .check{
   color:white;
@@ -44,5 +45,28 @@ i{
   &:hover{
     background:$green;
 
+  }
+}
+.creative{
+  margin-top: 40px;
+
+  &__head{
+    color: #464646;
+    font-family: "Open Sans",sans-serif;
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-weight: normal;
+  }
+
+  &__text{
+    display: block;
+    float: left;
+    color: $text;
+    font-size: 17px;
+    font-weight: normal;
+  
+  &_right{
+    padding-left: 160px;
+  }
   }
 }

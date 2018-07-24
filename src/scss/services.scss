@@ -1,0 +1,28 @@
+@import "partials/params";
+.Skills{
+	margin-top: 120px;
+	&__skill{
+		position: relative;
+		float: left;
+		margin-left: 50px;
+		
+		&_procent{
+			position: absolute;
+			top: 46px;
+			left: 40px;
+			font-size: 25px;
+			color: #81868e;
+
+		}
+		&_name{
+			font-size: 17px;
+			color:#81868e;
+			font-family: "Roboto",sans-serif;
+			font-weight: 300;
+			margin: 15px 0 0 20px;
+
+			
+		}
+	
+	}
+}
