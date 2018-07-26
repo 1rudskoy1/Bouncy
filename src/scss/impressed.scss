@@ -1,0 +1,26 @@
+@import 'partials/params';
+
+.Impressed{
+	position: relative;
+	background: url(img/Black-White.jpg) no-repeat center /cover;
+	height: 350px;
+
+	&__text{
+		margin-top: 80px;
+
+		&_head{
+			color: #f3f3f3;
+			font-size: 22px;
+		}
+	}
+
+	&__tv{
+			position: relative;
+
+			&_img{
+				position: absolute;
+				top: -40px;
+			}
+		}
+
+}
