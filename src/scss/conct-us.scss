@@ -1,3 +1,5 @@
+@import "partials/params";
+@import "partials/mixins";
 .Conct-us{
 	text-align: center;
 }
@@ -18,10 +20,9 @@
 		}
 
 		&_title{
-			font-size: 17px;
-			color: #464646;
+			@include head(300,17px);
 			margin: 15px 0;
-			text-transform: uppercase;
+			padding:0;
 		}
 
 		&_contacts{
@@ -62,10 +63,9 @@
 	background: url(img/Map.png)no-repeat center /cover;
 	height: 500px;
 	text-align: center;
-	&__text{
-		font-size: 18px;
-		padding-top: 280px;
-		color: white;
+	&__text{ 
+		@include text(18px,white);
+		padding-top: 190px;
 		text-transform: uppercase;
 
 	}

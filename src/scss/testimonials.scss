@@ -1,12 +1,11 @@
 @import "partials/params";
-
+@import "partials/mixins";
 .Testiomonials{
 	text-align: center;
 	background: #f3f3f3;
+	padding-bottom:40px;
 }
 .block{
-	background: white;
-
 	&__img{
 		float: left;
 		padding-left: 30px;
@@ -16,6 +15,8 @@
 		text-align: left;
 		padding-top: 35px;
 		padding-left: 220px;
+		@include text;
+
 	}
 	&__info{
 		
@@ -26,7 +27,7 @@
 			font-weight: bold;
 			font-size: 16px;
 			float: left;
-			margin-left: 218px;
+			margin-left: 70px;
 
 		}
 		&_spec{

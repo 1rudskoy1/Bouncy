@@ -25,20 +25,27 @@
 		}
 
 		&_price{
-		margin-top: 100px;
-		font-family: "Source Sans Pro",Sans-serif;
-		color: #81868e;
-		font-size: 23px;
+			margin-top: 65px;
+			font-family: "Source Sans Pro",Sans-serif;
+			color: #81868e;
+			font-size: 23px;
 		}
 		&_icon{
 			padding: 0;
 			background: white;
 			color: #19bd9a;
-			font-size: 47px;
+			font-size: 45px;
+
+
+			&:hover{
+				background:white;
+			}
 		}
+
 		&_number{
 			color: #19bd9a;
 			font-size: 50px;
+			padding-right:15px;
 			font-weight: bold;
 		}
 	}

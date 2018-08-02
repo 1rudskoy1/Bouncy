@@ -1,6 +1,8 @@
 @import "partials/params";
+@import "partials/mixins";
 .Team{
 	text-align: center;
+	margin-bottom:70px;
 }
 .person{
 
@@ -18,10 +20,8 @@
     		margin-bottom: 15px;
     	}
     	&_profession{
+    		@include head (100,16px);
 			color: #81868e;
-			font-size: 16px;
-			font-family: "Source Sans Pro",Sans-serif;
-			font-weight: 100;
 			margin-bottom: 20px;
 			font-style: italic;
     	}
@@ -33,6 +33,7 @@
 	color: #81868e;
 	float: left;
 	text-transform: uppercase;
+
 	font-size: 15px;
 	font-family: "Source Sans Pro",Sans-serif;
 }
