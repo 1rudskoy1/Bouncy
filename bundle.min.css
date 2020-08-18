@@ -35,7 +35,8 @@ a {
   .button:hover {
     color: white;
     text-decoration: none;
-    background: #333b46; }
+    background: #333b46;
+    cursor: pointer; }
 
 .Conct-us {
   text-align: center; }
@@ -66,7 +67,7 @@ a {
     text-transform: uppercase; }
 
 .blocks-info__form {
-  margin-top: 170px;
+  margin-top: 90px;
   background: white; }
   .blocks-info__form_input {
     height: 43px;
@@ -95,6 +96,9 @@ a {
     margin-bottom: 25px;
     padding-top: 190px;
     text-transform: uppercase; }
+#icon_map{
+  font-size: 12px;
+  padding:11px;}
 
 .footer {
   text-align: center;
@@ -110,21 +114,24 @@ a {
     margin-bottom: 35px; }
   .footer__social_icon {
     font-size: 16px;
-    background: #3b5998;
+    background: black;
     padding: 10px 10px;
     margin: 0 7px; }
+    .fa-facebook-f{
+      font-size: 15px; 
+      padding: 10px 13px;}
 
-.header {
+.header-text {
   text-align: center; }
-  .header__title {
+  .header-text__title {
     font-size: 35px;
-    margin-top: 200px;
+    margin-top: 10%;
     margin-bottom: 20px;
     color: white;
     text-transform: uppercase;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300; }
-  .header__subtitle {
+  .header-text__subtitle {
     color: white;
     font-size: 400;
     line-height: 27px;
@@ -141,6 +148,18 @@ a {
   background: #19bd9a;
   padding: 15px;
   border-radius: 25px; }
+
+.fa-lightbulb{
+  padding:16px 17px;}
+.fa-mouse-pointer{
+  padding: 16px 17px 15px 20px;}
+.fa-gamepad{
+  font-size: 20px;
+}
+.Services-head{
+  text-align: center;}
+.Services-text{
+  text-align: center;}
 
 i {
   margin: 10px 10px;
@@ -293,12 +312,9 @@ section {
 .Portfolio {
   text-align: center; }
 
-.Tabs {
-  position: relative; }
-  .Tabs__items {
-    position: absolute;
-    left: 190px;
-    top: 42px; }
+.Tabs__items {
+    width: 85%;
+    margin: 0 auto; }
     .Tabs__items_item {
       float: left;
       list-style-type: none;
@@ -307,13 +323,12 @@ section {
       line-height: 27px;
       margin-bottom: 25px;
       padding: 10px 20px;
-      cursor: pointer; }
+      cursor: pointer;
+      border-bottom: 1px solid #fff; }
       .Tabs__items_item:hover {
         border-bottom: 1px solid #8ddac9; }
 
-.Imgs {
-  margin-top: 130px; }
-  .Imgs__work {
+.Imgs__work {
     position: relative;
     margin: 0;
     padding: 0;
@@ -405,12 +420,20 @@ section {
       padding-right: 15px;
       font-weight: bold; }
 
+.Menu .icons{
+  cursor: pointer;
+  float: left; 
+  padding-right: 110px;}
+
 .Skills {
   margin-top: 70px; }
   .Skills__skill {
     position: relative;
     float: left;
     margin-left: 50px; }
+  .Skills__skill:nth-child(1){
+    margin-left: 0;
+  }
     .Skills__skill_procent {
       position: absolute;
       top: 46px;
@@ -427,6 +450,9 @@ section {
       padding-top: 30px;
       font-family: "Roboto",sans-serif;
       margin: 15px 0 0 20px; }
+    .Skills__skill:nth-child(3) .Skills__skill_name{
+      margin-left: 42px;
+    }
 
 .Subscribe {
   background: url(img/sub-bg.png) no-repeat center/cover;
@@ -557,6 +583,7 @@ section {
 
 .dots{
   margin-top: 50px;
+  text-align: center;
 }
 .dot{
   padding: 0 11px;
