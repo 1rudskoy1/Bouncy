@@ -1,57 +1,24 @@
-var slideIndex = 1;
-var FeedbackIndex = 1;
-var TabsIndex = 1;
-showSlides(slideIndex);
-showFeedback(FeedbackIndex);
-showTabs(TabsIndex);
-
-function currentFeedback(n){
-	showFeedback(FeedbackIndex = n);
-}
-
-
-function currentSlide(n){
-	showSlides(slideIndex = n);
-}
-
-function currentTabs(n){
-	showTabs(TabsIndex = n);
-}
-
-function showTabs(n){
-	var i;
-	var tabs = document.querySelectorAll('.tab');
-	var icons = document.querySelectorAll('.tab-icon');
-	for(i =0;i < tabs.length;i++){
-		tabs[i].style.display = "none";
-		icons[i].style.background = "#81868e";
-
-	}
-	tabs[TabsIndex - 1].style.display = "block";
-	icons[TabsIndex-1].style.background = "#19bd9a";
-}
-
-
-function showSlides(n){
-	var i;
-	var slides = document.querySelectorAll(".person");
-	var dots = document.querySelectorAll(".person .dot");
-	for (i = 0; i <slides.length;i++){
+function slide(classes, target){
+	let slides = document.querySelectorAll(classes);
+	let tabs = document.querySelectorAll(target);
+	let i = 0;
+	for (i = 1; i <slides.length;i++){
 		slides[i].style.display = " none";
 	}
+	for (i = 0; i < tabs.length; i++) {
+		tabs[i].addEventListener("click", function(e){
+			if(e.target.classList.contains("active") === false){
+				for(let j = 0; j < tabs.length; j++){
+					tabs[j].classList.remove("active");
+					slides[j].style.display = "none";
+				}
+					e.target.classList.add("active");
+					slides[$(e.target).index()].style.display = "block";
 
-	for(i=0; i<dots.length; i++){
-		dots[i].className = dots[i].className.replace("active","");
-	}
-
-	slides[slideIndex-1].style.display = "block";
+			}	
+		});
+	}	
 }
-
-
-function showFeedback(n){
-	var blocks = document.querySelectorAll('.block');
-	 for (i = 0; i < blocks.length;i++){
-		blocks[i].style.display = "none";
- 	}
- 	blocks[FeedbackIndex- 1].style.display = "block";
-}
+slide(".person", ".Team .dot");
+slide(".block", ".Testiomonials .dot");
+slide(".tab", ".icons-icon");

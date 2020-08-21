@@ -8,9 +8,6 @@ section {
 
 a {
   text-decoration: none; }
-.active{
-  background: #19bd9a;
-}
 .head {
   font-family: "Source sans pro", sans-serif;
   font-weight: bold;
@@ -595,7 +592,7 @@ section {
   }
   .dot:hover{
     cursor: pointer;
-    background: #181818;
+    background: #19bd9a;
   }
 
 .block__info_partho {
@@ -612,6 +609,9 @@ section {
   color: #464646;
   float: left;
   margin-left: 218px; }
+
+.active{
+  background: #19bd9a;}
 
   .fade{
     -webkit-animation-name:fade;
